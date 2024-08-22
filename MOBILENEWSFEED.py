@@ -8,7 +8,7 @@ import requests
 import re
 
 # Configuring the page layout
-st.set_page_config(layout="wide")
+st.set_page_config(layout="centered")
 
 # Custom CSS for mobile optimization
 st.markdown(
