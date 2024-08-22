@@ -206,10 +206,8 @@ else:
                         {row['published'].strftime('%Y-%m-%d') if pd.notnull(row['published']) else 'Unknown'} | {row['feed']}
                     </div>
                     <div class="article-summary">{row['summary'][:150]}...</div>
-                    <div class="article-buttons">
+                    <div class="article-link">
                         <a href="{row['link']}" target="_blank">Read More</a>
-                        <button onclick="add_to_review({i})">Add to Review</button>
-                        <button onclick="summarize_article({i})">Summarize</button>
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
