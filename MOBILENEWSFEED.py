@@ -174,7 +174,7 @@ else:
     with st.expander("Settings"):
         st.subheader("Select News Sources")
         feeds = list(rss_feeds.keys())
-        default_feeds = ["Food Quality & Safety"]
+        default_feeds = ["Food safety Magazine"]
         selected_feeds = st.multiselect("Select Feeds:", feeds, default=default_feeds)
 
         st.subheader("Date Range")
